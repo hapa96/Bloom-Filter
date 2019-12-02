@@ -3,8 +3,13 @@ public class Calculations {
         return Math.pow(1 - Math.pow(1 - (1.0/mSizeBitArray), kNumberOfHashFunctions*nExpectedElementsToBeInserted), kNumberOfHashFunctions);
     }
 
-    public static double mSizeOfBitArray(double p, int n) {
-        return -((n*Math.log(p)) / Math.pow(Math.log(2), 2));
+    public static int mSizeOfBitArray(double p, int n) {
+        int mSizeOfBitArray = ((int) -((n*Math.log(p)) / Math.pow(Math.log(2), 2)));
+        //Print all the Values to console
+        System.out.println("Fehlertoleranz p = " + p);
+        System.out.println("Anzahl erwarteter Elemente = " + n);
+        System.out.println("Bitarray m = " +mSizeOfBitArray);
+        return mSizeOfBitArray;
     }
 
     public static double kOptimumNumberOfHashFunctions(int m, int n) {
