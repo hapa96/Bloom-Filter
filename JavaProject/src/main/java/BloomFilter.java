@@ -35,7 +35,6 @@ public class BloomFilter {
         Scanner in = new Scanner(System.in);
         setmBitArray(in.nextDouble(), Words.size());
         k = Calculations.kOptimumNumberOfHashFunctions(mBitArray.length, Words.size());
-        if(k == 0) k=1;
         System.out.println("k: " + k);
         createHashes(k);
 
