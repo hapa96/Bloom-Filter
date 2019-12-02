@@ -12,7 +12,7 @@ public class Calculations {
         return mSizeOfBitArray;
     }
 
-    public static double kOptimumNumberOfHashFunctions(int m, int n) {
-        return (m/n) * Math.log(2);
+    public static int kOptimumNumberOfHashFunctions(int m, int n) {
+        return (int)((m/n) * Math.log(2));
     }
 }
