@@ -4,9 +4,8 @@ INPUT c:\Users\pascal.hauser1\Documents\repos\Bloom-Filter\Latex\Zusammenfassung
 OUTPUT c:\Users\pascal.hauser1\Documents\repos\Bloom-Filter\Latex\Zusammenfassung.log
 INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
 INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls
-INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo
-INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.clo
-INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo
 INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty
 INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty
 INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty
@@ -83,6 +82,20 @@ INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphi
 INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg
 INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
 INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.sty
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
 INPUT c:\Users\pascal.hauser1\Documents\repos\Bloom-Filter\Latex\Zusammenfassung.aux
 INPUT c:\Users\pascal.hauser1\Documents\repos\Bloom-Filter\Latex\Zusammenfassung.aux
 OUTPUT c:\Users\pascal.hauser1\Documents\repos\Bloom-Filter\Latex\Zusammenfassung.aux
@@ -105,33 +118,49 @@ INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\context\base
 INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
 INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\epstopdf-pkg\epstopdf-base.sty
 INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr17.tfm
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr8.tfm
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi12.tfm
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi8.tfm
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmmi6.tfm
 INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmr17.tfm
-INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmti12.tfm
-INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd
-INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd
-INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy8.tfm
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmsy6.tfm
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\pascal.hauser1\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
-INPUT c:\Users\pascal.hauser1\Documents\repos\Bloom-Filter\Latex\Ausgabe_Java.png
-INPUT c:\Users\pascal.hauser1\Documents\repos\Bloom-Filter\Latex\Ausgabe_Java.png
-INPUT c:\Users\pascal.hauser1\Documents\repos\Bloom-Filter\Latex\Ausgabe_Java.png
-INPUT c:\Users\pascal.hauser1\Documents\repos\Bloom-Filter\Latex\Ausgabe_Java.png
-INPUT c:\Users\pascal.hauser1\Documents\repos\Bloom-Filter\Latex\Ausgabe_Java.png
 INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmti10.tfm
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbx10.tfm
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd
+INPUT c:\Users\pascal.hauser1\Documents\repos\Bloom-Filter\Latex\Ausgabe_Java.png
+INPUT c:\Users\pascal.hauser1\Documents\repos\Bloom-Filter\Latex\Ausgabe_Java.png
+INPUT c:\Users\pascal.hauser1\Documents\repos\Bloom-Filter\Latex\Ausgabe_Java.png
+INPUT c:\Users\pascal.hauser1\Documents\repos\Bloom-Filter\Latex\Ausgabe_Java.png
+INPUT c:\Users\pascal.hauser1\Documents\repos\Bloom-Filter\Latex\Ausgabe_Java.png
 INPUT c:\Users\pascal.hauser1\Documents\repos\Bloom-Filter\Latex\Zusammenfassung.aux
 INPUT c:\Users\pascal.hauser1\Documents\repos\Bloom-Filter\Latex\Zusammenfassung.out
 INPUT c:\Users\pascal.hauser1\Documents\repos\Bloom-Filter\Latex\Zusammenfassung.out
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx10.pfb
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
-INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr17.pfb
-INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti12.pfb
-INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti12.pfb
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti10.pfb
+INPUT C:\Users\pascal.hauser1\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmti10.pfb
