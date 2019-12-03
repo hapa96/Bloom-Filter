@@ -30,7 +30,7 @@ public class BloomFilter {
             Words.add(line);
             line = inBuffer.readLine();
         }
-        System.out.println(path + "wurde erfolgreich eingelesen");
+        System.out.println(path + " wurde erfolgreich eingelesen");
         System.out.println("Total eingelesene Wörter: : " + Words.size());
         System.out.println("Bitte Fehlerwahtscheinlichkeit p im Dezimalsystem  eingeben:");
         Scanner in = new Scanner(System.in);

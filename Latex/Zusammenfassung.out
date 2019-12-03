@@ -1,0 +1,8 @@
+\BOOKMARK [1][-]{section.1}{Idee des Bloom Filter: }{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Vorteil:}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Nachteile:}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Konkretes Beispiel aus der Praxis: }{section.1}% 4
+\BOOKMARK [1][-]{section.2}{Implementation in Java}{}% 5
+\BOOKMARK [2][-]{subsection.2.1}{\334berpr\374fen der Fehlerwahrscheinlichkeit p der Datenstruktur}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.2}{Konkrete Ausgabe}{section.2}% 7
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Quellen}{subsection.2.2}% 8
