@@ -14,10 +14,11 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class BloomFilter {
     private HashSet<String> Words = new HashSet<>();     //stores all the words
-    private List<HashFunction> HashList = new ArrayList<>();
+    private List<HashFunction> HashList = new ArrayList<>();// stores differents hashfunctions k
     private String path;                                //path for words.txt
     private byte[] mBitArray;                          // Initial Bitset with length 100
-    private int k = 0;
+    private int k = 1;                                  // Hashfunctions by default 1
+    private double p = 0;                               //Fault Probability
 
     // ****************************CREATE A NEW BLOOM FILTER WITH WORDS FROM A EXTERNAL SOURCE ***********************************************************
     public BloomFilter(String path) throws IOException {
@@ -29,18 +30,19 @@ public class BloomFilter {
             Words.add(line);
             line = inBuffer.readLine();
         }
-        System.out.println("File eingelesen: " + path);
-        System.out.println("Eingelesene Wörter: " + Words.size());
-        System.out.println("Bitte Fehlerwahtscheinlichkeit eingeben:     ");
+        System.out.println(path + "wurde erfolgreich eingelesen");
+        System.out.println("Total eingelesene Wörter: : " + Words.size());
+        System.out.println("Bitte Fehlerwahtscheinlichkeit p im Dezimalsystem  eingeben:");
         Scanner in = new Scanner(System.in);
-        setmBitArray(in.nextDouble(), Words.size());
+        p = in.nextDouble();
+        setmBitArray(p, Words.size());
         k = Calculations.kOptimumNumberOfHashFunctions(mBitArray.length, Words.size());
-        if(k==0)k=1;
-        System.out.println("k: " + k);
+        if (k == 0) k = 1;
+        System.out.println("Anzahle generierte Hashfunktionen: " + k);
         createHashes(k);
 
     }
-
+    //Calculate the optimum size of the mBitArray
     public void setmBitArray(double p, int n) {
         mBitArray = new byte[Calculations.mSizeOfBitArray(p, n)];
     }
@@ -48,21 +50,17 @@ public class BloomFilter {
     //Hash all the words in List
     public void HashAllWords() {
 
-
         for (String s : Words) {
             int code = 0;
-            for (int i = 0; i < k; i++) {
+            for (int i = 0; i < k; i++) {   //generates the different hashfunctions and stores it in HashList
                 code = HashList.get(i).hashUnencodedChars(s).asInt();
                 code = countModulo(code);
                 FillIndex(code);
             }
 
         }
-        for (int i = 0; i < mBitArray.length; i++) {
-            System.out.print(mBitArray[i]);
-        }
-        System.out.println();
     }
+
 
     public int countModulo(int input) {
         input = input % mBitArray.length;
@@ -75,7 +73,7 @@ public class BloomFilter {
             HashList.add(Hashing.murmur3_128((int) ((Math.random() * Integer.MAX_VALUE))));
         }
     }
-
+    //manipulate the BitArray with the generated Hash
     public void FillIndex(int one) {
         mBitArray[one] = 1;
 
@@ -87,7 +85,7 @@ public class BloomFilter {
             System.out.println(s);
         }
     }
-
+//May contain only checks the mBitArray, if returned true, the program will check the HashSet (FalsePositive...)
     public boolean MayContain(String s) {
         int code;
         for (int i = 0; i < k; i++) {
@@ -109,11 +107,10 @@ public class BloomFilter {
         }
         System.out.println("Es wurden: " + (int) amountOfRandomWords + " Zufällige Wörter generiert");
         for (String s : test) {
-            if (MayContain(s) == true && (!Words.contains(s))) falsePositive++;
+            if (MayContain(s) == true && (!Words.contains(s))) falsePositive++; //If the word Maycontained in the mBitArray(according to the hashstring) but in reality the word is not included (HashSet.contain())
         }
         System.out.println("False Positive: " + (int) falsePositive);
-        return (falsePositive / amountOfRandomWords) ;
+        return (falsePositive / amountOfRandomWords);
     }
-
 
 }

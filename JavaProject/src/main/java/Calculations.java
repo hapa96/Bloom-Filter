@@ -6,9 +6,10 @@ public class Calculations {
     public static int mSizeOfBitArray(double p, int n) {
         int mSizeOfBitArray = ((int) -((n*Math.log(p)) / Math.pow(Math.log(2), 2)));
         //Print all the Values to console
+        System.out.println("======================================AUSWERTUNG=====================================");
         System.out.println("Fehlertoleranz p = " + p);
         System.out.println("Anzahl erwarteter Elemente = " + n);
-        System.out.println("Bitarray m = " +mSizeOfBitArray);
+        System.out.println("Grösse des Bitarray m = " + mSizeOfBitArray);
         return mSizeOfBitArray;
     }
 
