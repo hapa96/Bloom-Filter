@@ -13,12 +13,12 @@ import java.util.concurrent.ThreadLocalRandom;
 
 
 public class BloomFilter {
-    private HashSet<String> Words = new HashSet<>();     //stores all the words
-    private List<HashFunction> HashList = new ArrayList<>();// stores differents hashfunctions k
-    private String path;                                //path for words.txt
-    private byte[] mBitArray;                          // Initial Bitset with length 100
-    private int k = 1;                                  // Hashfunctions by default 1
-    private double p = 0;                               //Fault Probability
+    private HashSet<String> Words = new HashSet<>();            //stores all the words
+    private List<HashFunction> HashList = new ArrayList<>();    // stores differents hashfunctions k
+    private String path;                                        //path for words.txt
+    private byte[] mBitArray;                                   // Initial Bitset with length 100
+    private int k = 1;                                          // Hashfunctions by default 1
+    private double p = 0;                                       //Fault Probability
 
     // ****************************CREATE A NEW BLOOM FILTER WITH WORDS FROM A EXTERNAL SOURCE ***********************************************************
     public BloomFilter(String path) throws IOException {
@@ -40,16 +40,17 @@ public class BloomFilter {
         if (k == 0) k = 1;
         System.out.println("Anzahle generierte Hashfunktionen: " + k);
         createHashes(k);
-
     }
+
     //Calculate the optimum size of the mBitArray
     public void setmBitArray(double p, int n) {
-        mBitArray = new byte[Calculations.mSizeOfBitArray(p, n)];
+        // minimum 1 element long - size = 0 -> error
+        if(Calculations.mSizeOfBitArray(p, n) == 0) mBitArray = new byte[1];
+        else mBitArray = new byte[Calculations.mSizeOfBitArray(p, n)];
     }
 
     //Hash all the words in List
     public void HashAllWords() {
-
         for (String s : Words) {
             int code = 0;
             for (int i = 0; i < k; i++) {   //generates the different hashfunctions and stores it in HashList
@@ -57,10 +58,8 @@ public class BloomFilter {
                 code = countModulo(code);
                 FillIndex(code);
             }
-
         }
     }
-
 
     public int countModulo(int input) {
         input = input % mBitArray.length;
@@ -73,10 +72,10 @@ public class BloomFilter {
             HashList.add(Hashing.murmur3_128((int) ((Math.random() * Integer.MAX_VALUE))));
         }
     }
-    //manipulate the BitArray with the generated Hash
-    public void FillIndex(int one) {
-        mBitArray[one] = 1;
 
+    //manipulate the BitArray with the generated Hash
+    public void FillIndex(int index) {
+        mBitArray[index] = 1;
     }
 
     //Helper function to print all Words in List Words
@@ -85,7 +84,8 @@ public class BloomFilter {
             System.out.println(s);
         }
     }
-//May contain only checks the mBitArray, if returned true, the program will check the HashSet (FalsePositive...)
+
+    //May contain only checks the mBitArray, if returned true, the program will check the HashSet (FalsePositive...)
     public boolean MayContain(String s) {
         int code;
         for (int i = 0; i < k; i++) {
@@ -96,7 +96,6 @@ public class BloomFilter {
 
         return true;
     }
-
 
     public double testProbability(int amountOfRandomWords) {
         double falsePositive = 0;
